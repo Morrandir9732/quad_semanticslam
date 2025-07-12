@@ -2,7 +2,20 @@
 
 git clone --recurse-submodules https://github.com/Morrandir9732/quad_semanticslam.git
 
--Primero incluir al workspace en el bashrc
+-Instalar RTABMAP
+
+sudo apt update
+
+sudo apt install ros-noetic-rtabmap ros-noetic-rtabmap-ros
+
+-Clonar rtabmap_ros
+
+cd ~/quad_semanticslam/src
+
+git clone -b noetic-devel https://github.com/introlab/rtabmap_ros.git
+
+
+-Incluir al workspace en el bashrc
 
 cd <repo location>
 
@@ -10,8 +23,8 @@ catkin_make
 
 source devel/setup.bash
 
--Instalar RTABMAP
 
+-Instalar RTABMAP
 
 sudo apt update
 
@@ -19,7 +32,6 @@ sudo apt install ros-noetic-rtabmap ros-noetic-rtabmap-ros
 
 
 -Para lanzar la simulación ejecutar: 
-
 
 roslaunch yolo_rtabmap_bridge quad_sim_map.launch
 
