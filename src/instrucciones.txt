@@ -17,7 +17,7 @@ git clone -b noetic-devel https://github.com/introlab/rtabmap_ros.git
 
 -Incluir al workspace en el bashrc
 
-cd <repo location>
+cd ~/quad_semanticslam
 
 catkin_make
 
