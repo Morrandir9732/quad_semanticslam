@@ -1,0 +1,15 @@
+[submodule "src/hector_gazebo"]
+	path = src/hector_gazebo
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
+[submodule "src/hector_models"]
+	path = src/hector_models
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_models.git
+[submodule "src/hector_quadrotor"]
+	path = src/hector_quadrotor
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_quadrotor.git
+[submodule "src/rtabmap_ros"]
+	path = src/rtabmap_ros
+	url = https://github.com/introlab/rtabmap_ros.git
+[submodule "src/hector_pose_estimation"]
+	path = src/hector_pose_estimation
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_localization.git
