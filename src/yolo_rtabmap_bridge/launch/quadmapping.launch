@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="rgb_topic"          default="/camera/rgb/image_raw"/>
+  <arg name="depth_topic"       default="/camera/depth/image_raw"/>
+  <arg name="camera_info_topic" default="/camera/rgb/camera_info"/>
+  <arg name="approx_sync"       default="true"/>
+  <arg name="visual_odometry"   default="true"/>
+  <arg name="rtabmap_args"      default="--delete_db_on_start --landmarks"/>
+
+  <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
+    <arg name="rgb_topic"          value="$(arg rgb_topic)"/>
+    <arg name="depth_topic"       value="$(arg depth_topic)"/>
+    <arg name="camera_info_topic" value="$(arg camera_info_topic)"/>
+    <arg name="approx_sync"       value="$(arg approx_sync)"/>
+    <arg name="visual_odometry"   value="$(arg visual_odometry)"/>
+    <arg name="rtabmap_args"      value="$(arg rtabmap_args)"/>
+  </include>
+</launch>
+
+

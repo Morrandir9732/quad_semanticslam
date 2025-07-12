@@ -1,0 +1,47 @@
+-Para clonar:
+
+git clone --recurse-submodules https://github.com/Morrandir9732/quad_semanticslam.git
+
+-Primero incluir al workspace en el bashrc
+
+cd <repo location>
+
+catkin_make
+
+source devel/setup.bash
+
+-Instalar RTABMAP
+
+
+sudo apt update
+
+sudo apt install ros-noetic-rtabmap ros-noetic-rtabmap-ros
+
+
+-Para lanzar la simulación ejecutar: 
+
+
+roslaunch yolo_rtabmap_bridge quad_sim_map.launch
+
+
+--Aparecen warnings del RTABMAP si no encuentra la relación entre un grafo y otro, no es un error fatal--
+
+-Para controlar el drone primero hacer clic en la consola:
+
+	Encender motores: t
+	Apagar motores: y
+
+	Arriba: w
+	Abajo: s
+
+	Izquierda: j
+	Derecha: l
+
+	Adelante: i
+	Atras: k
+
+
+-Para cerrar todo primero presionar q, luego ctrl+c
+
+-La db generada por RTABMAP se guarda en home/usr/.ros/rtabmap.db
+

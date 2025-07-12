@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="rvizconfig" default="$(find yolo_rtabmap_bridge)/config/quad.rviz"/>
+
+  <param name="use_sim_time" value="$(arg use_sim_time)"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" output="screen"/>
+</launch>
+
+
+

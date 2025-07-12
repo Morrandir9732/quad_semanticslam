@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="control_mode" default="velocity"/>
+
+  <node name="keyboard_joy" pkg="yolo_rtabmap_bridge" type="keyboard_joy.py" output="screen" />
+
+  <!-- Launch the hector quadrotor teleop node -->
+  <node name="teleop1" pkg="hector_quadrotor_teleop" type="quadrotor_teleop" output="screen">
+    <rosparam subst_value="true">
+      control_mode: $(arg control_mode)
+      x_axis: 5
+      y_axis: 4
+      z_axis: 2
+      thrust_axis: -3
+      yaw_axis: 1
+
+      slow_button: 4
+      go_button: 6
+      stop_button: 2
+      interrupt_button: 3
+    </rosparam>
+  </node>
+</launch>
+
+
+
