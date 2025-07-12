@@ -11,7 +11,7 @@
     <xacro:quadrotor_base_macro />
     
     <!-- Kinect -->
-    <xacro:include filename="$(find hector_sensors_description)/urdf/kinect_camera2.urdf.xacro" />
+    <xacro:include filename="$(find yolo_rtabmap_bridge)/urdf/kinect_camera2.urdf.xacro" />
     <xacro:kinect_camera name="camera" parent="base_link">
       <origin xyz="0.05 0.0 -0.12" rpy="0 0 0"/>
     </xacro:kinect_camera>
