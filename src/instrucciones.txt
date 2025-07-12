@@ -24,13 +24,6 @@ catkin_make
 source devel/setup.bash
 
 
--Instalar RTABMAP
-
-sudo apt update
-
-sudo apt install ros-noetic-rtabmap ros-noetic-rtabmap-ros
-
-
 -Para lanzar la simulación ejecutar: 
 
 roslaunch yolo_rtabmap_bridge quad_sim_map.launch
