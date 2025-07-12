@@ -6,7 +6,7 @@ git clone --recurse-submodules https://github.com/Morrandir9732/quad_semanticsla
 
 sudo apt update
 
-sudo apt install ros-noetic-rtabmap ros-noetic-rtabmap-ros
+sudo apt install ros-noetic-rtabmap
 
 -Clonar rtabmap_ros
 
